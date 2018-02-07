@@ -33,8 +33,8 @@ def train(bkgTree, sigTree, discriList, MVAmethod, nTraining, label, cuts):
    
     # add cuts here eventually
     
-    sigcut = ROOT.TCut(cuts)
-    bkgcut = ROOT.TCut(cuts)
+    sigcut = ROOT.TCut(cuts[0])
+    bkgcut = ROOT.TCut(cuts[1])
 
     dataloader.PrepareTrainingAndTestTree( ROOT.TCut( sigcut ), ROOT.TCut( bkgcut ),
                                       ':'.join([ 'nTrain_Signal={}'.format(nTraining),     # Number of signal events used, 0 = ALL
