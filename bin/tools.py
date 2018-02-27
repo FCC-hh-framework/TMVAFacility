@@ -46,7 +46,10 @@ def train(bkgTree, sigTree, discriList, MVAmethod, nTraining, label, cuts):
                                                                       #   (could e.g. also be sum of weights or simply defined to be 1)
                                                '!V'                   # Don't print everything (i.e. not verbose) 
                                                ]))
-    BDTcfg = '!H:!V:NTrees=4000:MaxDepth=4:BoostType=AdaBoost:AdaBoostBeta=0.5:SeparationType=GiniIndex:nCuts=20:PruneMethod=NoPruning'
+    # new -> 30 mins train, same performances as init
+    BDTcfg = '!H:!V:NTrees=600:MaxDepth=4:BoostType=AdaBoost:AdaBoostBeta=0.15:SeparationType=GiniIndex:nCuts=100:PruneMethod=NoPruning'
+    # init -> 3 hours train
+    #BDTcfg = '!H:!V:NTrees=4000:MaxDepth=4:BoostType=AdaBoost:AdaBoostBeta=0.5:SeparationType=GiniIndex:nCuts=20:PruneMethod=NoPruning'
     MLPcfg = 'H:!V:NeuronType=tanh:VarTransform=N:NCycles=600:HiddenLayers=N+5:TestRate=5:!UseRegulator'
 
     if MVAmethod == 'BDT':
