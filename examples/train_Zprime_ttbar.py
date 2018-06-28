@@ -21,10 +21,10 @@ variables = [
 
 #### define signal and background trees + selection to be applied ###
 
-eospath = '/eos/experiment/fcc/hh/analyses/Zprime_tt/heppy_outputs/fcc_v02_mvaQCD/'
+eospath = '/eos/experiment/fcc/hh/analyses/W_top_vs_QCD_tagger/heppy_outputs/fcc_v02/'
 
-bkgTree = eospath + 'pp_jj_lo_filter_pTjet7_5TeV/heppy.FCChhAnalyses.Zprime_tt.TreeProducer.TreeProducer_1/tree.root'
-sigTree = eospath + 'pp_Zprime_20TeV_ttbar_qcdBDTtrain/heppy.FCChhAnalyses.Zprime_tt.TreeProducer.TreeProducer_1/tree.root'
+bkgTree = eospath + 'p8_pp_jj_lo_tagger/heppy.FCChhAnalyses.W_top_vs_QCD_tagger.TreeProducer.TreeProducer_1/tree_jetlist.root'
+sigTree = eospath + 'p8_pp_Zprime_20TeV_ttbar_tagger/heppy.FCChhAnalyses.W_top_vs_QCD_tagger.TreeProducer.TreeProducer_1/tree_jetlist.root'
 
 SIGcuts = ''
 BKGcuts = 'Mj1j2_trk02>10000.'
