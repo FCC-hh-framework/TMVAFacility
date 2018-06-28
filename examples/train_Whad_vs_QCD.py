@@ -21,8 +21,7 @@ variables = [
 
 #### define signal and background trees + selection to be applied ###
 
-#eospath = '/eos/experiment/fcc/hh/analyses/W_top_vs_QCD_tagger/heppy_outputs/fcc_v02/'
-eospath = '/afs/cern.ch/user/d/djamin/fcc_work/heppy/FCChhAnalyses/output/tagger/W_top_vs_QCD_tagger/'
+eospath = '/eos/experiment/fcc/hh/analyses/W_top_vs_QCD_tagger/heppy_outputs/fcc_v02/'
 # to make these special trees ,execute scripts/do_jet_list.py
 bkgTree = eospath + 'p8_pp_jj_lo_tagger/heppy.FCChhAnalyses.W_top_vs_QCD_tagger.TreeProducer.TreeProducer_1/tree_jetlist.root'
 sigTree = eospath + 'p8_pp_RSGraviton_20TeV_ww_tagger/heppy.FCChhAnalyses.W_top_vs_QCD_tagger.TreeProducer.TreeProducer_1/tree_jetlist.root'
