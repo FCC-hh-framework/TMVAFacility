@@ -66,7 +66,12 @@ Text.SetTextSize(0.04)
 leftText = 'Boosted topology'      
 text = '#it{' + leftText +'}'
 Text.DrawLatex(0.90, 0.92, text)
-      
+
+ptText= 'Jet p_{T}~10 TeV'
+text = '#it{' + ptText +'}'
+Text.SetTextSize(0.031)
+Text.DrawLatex(0.37, 0.82, text)
+
 canvas.RedrawAxis()
 canvas.GetFrame().SetBorderSize( 12 )
 canvas.Modified()
